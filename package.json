@@ -9,7 +9,7 @@
     , "email": ""
     , "url": ""
   }
-  , "scripts": {  }
+  , "scripts": { "test": "grunt test" }
   , "repository": {
       "type": "git"
     , "url": "https://github.com/leoman730/demo.git"
