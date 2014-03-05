@@ -7,4 +7,8 @@ describe("Create a car with 4 doors", function() {
     it("should have a car with 4 doors", function() {
        expect(myCar.getDoors().toEqual(4)); 
     });
+    
+    it("should fail this test", function() {
+       expect(myCar.getDoors().toEqual(2)); 
+    });    
 });
