@@ -1,10 +1,12 @@
 /* jshint node: true */
+/* Reference : http://travisjeffery.com/b/2013/09/testing-javascript-projects-with-grunt-jasmine-jshint/ */
 
 module.exports = function (grunt) {
   "use strict";
 
   grunt.initConfig({
       pkg: grunt.file.readJSON('package.json')
+      , "scripts": { "test": "grunt test" }
       , jasmine: {
         src: "*.js"
       , options: {
