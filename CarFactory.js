@@ -3,8 +3,6 @@
  */
 
 function CarFactory() {
-	// by default, it makes regular car
-	this.type = 'regular';
 	this.name = 'SCPS'; // Name of the factory
 
 	this.car_proto =  {
