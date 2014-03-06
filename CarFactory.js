@@ -5,6 +5,7 @@
 function CarFactory() {
 	// by default, it makes regular car
 	this.type = 'regular';
+	this.name = 'SCPS'; // Name of the factory
 
 	this.car_proto =  {
 		regular: {
@@ -25,5 +26,10 @@ CarFactory.prototype.makeCar = function (type) {
 		throw new Error("Factory can't make this type of car");
 	};
 
-	return this.car_proto[type];
+	var car = this.car_proto[type];
+
+	// add manufacture name
+	car.madeBy = this.name;
+
+	return car;
 }

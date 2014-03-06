@@ -1,3 +1,4 @@
+// testing regular car
 describe("When making a regular car", function() {
     var factory, car;
 
@@ -13,9 +14,14 @@ describe("When making a regular car", function() {
     it("should have 4 doors", function() {
        expect(car.doors).toEqual(4); 
     });    
+
+    it('should have the correct manufacure name', function () {
+        expect(car.madeBy).toEqual('SCPS');
+    });
+
 });
 
-
+// testing luxury car
 describe("When making a luxury car", function() {
     var factory, car;
 
@@ -30,8 +36,15 @@ describe("When making a luxury car", function() {
     
     it("should have 4 doors", function() {
        expect(car.doors).toEqual(4); 
-    });    
+    });
+
+    it('should have the correct manufacure name', function () {
+        expect(car.madeBy).toEqual('SCPS');
+    });
 });
+
+
+
 
 describe('When the car type is not in the factory\'s specification', function () {
     it("should throw an exception", function() {
