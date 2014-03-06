@@ -25,7 +25,7 @@ describe("When making a luxury car", function() {
     });
     
     it("should have a hybrid engine", function() {
-       expect(car.engine).toEqual('hybrid'); 
+       expect(car.engine).toEqual('deisel'); 
     });
     
     it("should have 4 doors", function() {
