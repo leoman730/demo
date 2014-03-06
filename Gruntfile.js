@@ -1,5 +1,7 @@
 /* jshint node: true */
 /* Reference : http://travisjeffery.com/b/2013/09/testing-javascript-projects-with-grunt-jasmine-jshint/ */
+var module = module || {};
+
 module.exports = function (grunt) {
   "use strict";
 
@@ -9,7 +11,8 @@ module.exports = function (grunt) {
         src: "*.js"
       , options: {
           specs: "test/*.js"
-        , version: '2.0.0'
+        , version: '1.3.1'
+        , display: 'full'
       }
     }
   })
