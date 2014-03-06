@@ -1,14 +1,14 @@
 describe("Create a car with 4 doors", function() {
     var mycar = new Car({
         type : "van",
-        door : 4
+        doors : 4
     });
     
     it("should have a car with 4 doors", function() {
-       expect(myCar.getDoors().toEqual(4)); 
+       expect(mycar.getDoors()).toEqual(4); 
     });
     
     it("should fail this test", function() {
-       expect(myCar.getDoors().toEqual(2)); 
+       expect(mycar.getType()).toEqual('van'); 
     });    
 });
