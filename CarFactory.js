@@ -21,9 +21,6 @@ function CarFactory() {
 
 
 CarFactory.prototype.makeCar = function (type) {
-	// should check to make sure the factory can make 
-	// the specific car type
-
 	if (this.car_proto[type] == undefined) {
 		throw new Error("Factory can't make this type of car");
 	};
